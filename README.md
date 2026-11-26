@@ -37,11 +37,15 @@ Aplicação de linha de comando (CLI) modularizada (`main.py` e `operacoes.py`) 
 
 ---
 
-## Tecnologias
+## Tecnologias e ferramentas
 
-* **Linguagens & Web:** Python, SQL, Flask, HTML, CSS
-* **Dados & BI:** pandas, Power BI, Microsoft Excel
-* **Ferramentas:** Git, GitHub, VS Code, Google Colab
+### Stack utilizada no Fake Pinterest
+
+<p>
+  <img src="./assets/tech-fakepinterest.svg" width="100%" alt="Tecnologias do Fake Pinterest" />
+</p>
+
+Desenvolvi o back-end em **Python** com **Flask**, estruturando rotas, autenticação de usuários (login, cadastro e criptografia de senhas) e upload de imagens. Usei **SQLite** e **SQLAlchemy** para modelagem e persistência do banco de dados relacional, e **HTML5** com **CSS3** (e templates Jinja2) para construir as páginas de feed e perfil.
 
 ---
 
