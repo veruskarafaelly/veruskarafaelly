@@ -22,8 +22,9 @@
     .title { font: 700 32px 'Segoe UI', system-ui, sans-serif; fill: #f9a8d4; }
     .sub { font: 400 15px 'Segoe UI', system-ui, sans-serif; fill: #a1a1aa; }
     .phrase { font: 400 18px 'Segoe UI', system-ui, sans-serif; fill: #f4f4f5; }
-    .mono { font: 500 13px 'Consolas', 'Courier New', monospace; fill: #c4b5fd; }
-    .cmd { font: 500 15px 'Consolas', 'Courier New', monospace; fill: #f9a8d4; }
+    .mono { font: 500 13px 'Consolas', 'Courier New', monospace; fill: #b48fa8; }
+    .arrow { font: 600 15px 'Consolas', 'Courier New', monospace; fill: #f4f4f5; }
+    .cmd { font: 500 15px 'Consolas', 'Courier New', monospace; fill: #8ec5fc; }
     .os { font: 600 12px 'Consolas', monospace; fill: #a1a1aa; letter-spacing: 2px; }
     .byte { font: 600 11px 'Consolas', monospace; fill: #f472b6; letter-spacing: 1.5px; }
 
@@ -35,6 +36,14 @@
     .c1 { animation: show1 12s step-end infinite; }
     .c2 { animation: show2 12s step-end infinite; }
     .c3 { animation: show3 12s step-end infinite; }
+
+    /* Animações do gatinho */
+    .cat-float { animation: float 2.6s ease-in-out infinite; }
+    .cat-tail { animation: tailWag 2.1s ease-in-out infinite; }
+    .eyes-open { animation: eyeOpen 4.2s step-end infinite; }
+    .eyes-closed { animation: eyeClosed 4.2s step-end infinite; }
+    .belly-cursor { animation: blink 1s step-end infinite; }
+    .cat-shadow { animation: shadowPulse 2.6s ease-in-out infinite; }
 
     /* Brilhos piscando suavemente */
     .sparkle { animation: twinkle 2.4s ease-in-out infinite; }
@@ -70,9 +79,36 @@
       100% { opacity: 0; }
     }
 
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-5px); }
+    }
+
+    @keyframes tailWag {
+      0%, 100% { transform: rotate(-4deg); }
+      50% { transform: rotate(10deg); }
+    }
+
+    @keyframes eyeOpen {
+      0% { opacity: 1; }
+      92% { opacity: 0; }
+      96% { opacity: 1; }
+    }
+
+    @keyframes eyeClosed {
+      0% { opacity: 0; }
+      92% { opacity: 1; }
+      96% { opacity: 0; }
+    }
+
+    @keyframes shadowPulse {
+      0%, 100% { opacity: 0.55; }
+      50% { opacity: 0.28; }
+    }
+
     @keyframes twinkle {
       0%, 100% { opacity: 1; }
-      50% { opacity: 0.35; }
+      50% { opacity: 0.3; }
     }
   </style>
 
@@ -87,7 +123,7 @@
   
   <circle cx="32" cy="28" r="5" fill="#f472b6" />
   <circle cx="50" cy="28" r="5" fill="#c084fc" />
-  <circle cx="68" cy="28" r="5" fill="#60a5fa" />
+  <circle cx="68" cy="28" r="5" fill="#8ec5fc" />
   <text x="768" y="32" text-anchor="end" class="os">VERUSKA OS</text>
   <line x1="20" y1="48" x2="780" y2="48" stroke="#2d1b2e" stroke-width="1.5" />
 
@@ -99,7 +135,7 @@
   
   <rect x="40" y="184" width="380" height="62" rx="10" fill="#1c1426" stroke="#4c2a42" stroke-width="1.5" />
   <text x="56" y="208" class="mono">veruska@dev-os:~</text>
-  <text x="56" y="232" class="cmd">&gt;</text>
+  <text x="56" y="232" class="arrow">&gt;</text>
 
   
   <text x="72" y="232" class="cmd c1">curiosidade.exe</text>
@@ -109,11 +145,11 @@
   
   <g class="typer">
     <rect x="71" y="214" width="148" height="26" fill="#1c1426" />
-    <rect x="72" y="218" width="9" height="17" fill="#f472b6" class="cursor" />
+    <rect x="72" y="218" width="9" height="17" fill="#e85d99" class="cursor" />
   </g>
 
   
-  <g transform="translate(558, 66)">
+  <g transform="translate(558, 72)">
     
     <g class="sparkle">
       <rect x="-18" y="49" width="4" height="4" fill="#f472b6" />
@@ -127,110 +163,98 @@
       <rect x="122" y="18" width="4" height="4" fill="#c084fc" />
       <rect x="130" y="18" width="4" height="4" fill="#c084fc" />
       <rect x="126" y="22" width="4" height="4" fill="#c084fc" />
-      <rect x="120" y="88" width="4" height="4" fill="#f472b6" />
+      <rect x="120" y="92" width="4" height="4" fill="#f472b6" />
     </g>
 
     
-    <rect x="14" y="0" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="63" y="0" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="77" y="0" width="7.3" height="7.3" fill="#f472b6" />
-
-    <rect x="14" y="7" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="7" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="28" y="7" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="56" y="7" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="63" y="7" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="70" y="7" width="7.3" height="7.3" fill="#db2777" />
-    <rect x="77" y="7" width="7.3" height="7.3" fill="#f472b6" />
+    <ellipse cx="46" cy="122" rx="34" ry="5" fill="#2d1b2e" class="cat-shadow" />
 
     
-    <rect x="14" y="14" width="49.3" height="7.3" fill="#ffffff" />
-    <rect x="63" y="14" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="70" y="14" width="7.3" height="7.3" fill="#c084fc" />
-    <rect x="77" y="14" width="7.3" height="7.3" fill="#f472b6" />
+    <g class="cat-float">
+      
+      <g transform="translate(74, 80)">
+        <g class="cat-tail">
+          <rect x="-4" y="-3" width="22" height="7.3" fill="#c084fc" />
+          <rect x="7" y="-10" width="14.3" height="7.3" fill="#ffffff" />
+          <rect x="21" y="-10" width="7.3" height="7.3" fill="#c084fc" />
+          <rect x="14" y="-24" width="7.3" height="14.3" fill="#ffffff" />
+          <rect x="21" y="-24" width="7.3" height="14.3" fill="#c084fc" />
+          <rect x="14" y="-31" width="14.3" height="7.3" fill="#f472b6" />
+        </g>
+      </g>
 
-    <rect x="7" y="21" width="70.3" height="7.3" fill="#ffffff" />
-    <rect x="77" y="21" width="7.3" height="7.3" fill="#c084fc" />
+      
+      <rect x="14" y="0" width="7.3" height="7.3" fill="#ffffff" />
+      <rect x="56" y="0" width="14.3" height="7.3" fill="#f472b6" />
+      <rect x="77" y="0" width="7.3" height="7.3" fill="#8ec5fc" />
+
+      <rect x="14" y="7" width="7.3" height="7.3" fill="#ffffff" />
+      <rect x="21" y="7" width="7.3" height="7.3" fill="#f472b6" />
+      <rect x="28" y="7" width="7.3" height="7.3" fill="#ffffff" />
+      <rect x="56" y="7" width="7.3" height="7.3" fill="#ffffff" />
+      <rect x="63" y="7" width="7.3" height="7.3" fill="#db2777" />
+      <rect x="70" y="7" width="14.3" height="7.3" fill="#f472b6" />
+
+      
+      <rect x="14" y="14" width="49.3" height="7.3" fill="#ffffff" />
+      <rect x="63" y="14" width="7.3" height="7.3" fill="#f472b6" />
+      <rect x="70" y="14" width="7.3" height="7.3" fill="#c084fc" />
+      <rect x="77" y="14" width="7.3" height="7.3" fill="#f472b6" />
+
+      <rect x="7" y="21" width="70.3" height="21.3" fill="#ffffff" />
+      <rect x="77" y="21" width="7.3" height="21.3" fill="#c084fc" />
+
+      <rect x="14" y="42" width="56.3" height="7.3" fill="#ffffff" />
+      <rect x="70" y="42" width="7.3" height="7.3" fill="#c084fc" />
+
+      
+      <rect x="14" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
+      <rect x="42" y="35" width="7.3" height="7.3" fill="#f472b6" />
+      <rect x="63" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
+      <rect x="35" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
+      <rect x="49" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
+
+      
+      <g class="eyes-open">
+        <rect x="21" y="28" width="7.3" height="14.3" fill="#1e1633" />
+        <rect x="56" y="28" width="7.3" height="14.3" fill="#1e1633" />
+      </g>
+
+      
+      <g class="eyes-closed">
+        <rect x="21" y="35" width="7.3" height="4" fill="#1e1633" />
+        <rect x="56" y="35" width="7.3" height="4" fill="#1e1633" />
+      </g>
+
+      
+      <rect x="21" y="49" width="49.3" height="7.3" fill="#ffffff" />
+      <rect x="70" y="49" width="7.3" height="7.3" fill="#c084fc" />
+
+      
+      <rect x="14" y="56" width="7.3" height="28.3" fill="#ffffff" />
+      <rect x="21" y="56" width="42.3" height="28.3" fill="#1e1633" />
+      <rect x="63" y="56" width="7.3" height="28.3" fill="#ffffff" />
+      <rect x="70" y="56" width="7.3" height="28.3" fill="#c084fc" />
+
+      
+      <rect x="26" y="61" width="5" height="5" fill="#f9a8d4" />
+      <rect x="31" y="66" width="5" height="5" fill="#f9a8d4" />
+      <rect x="26" y="71" width="5" height="5" fill="#f9a8d4" />
+      <rect x="41" y="72" width="14" height="4.5" fill="#ffffff" class="belly-cursor" />
+
+      
+      <rect x="14" y="84" width="56.3" height="7.3" fill="#ffffff" />
+      <rect x="70" y="84" width="7.3" height="7.3" fill="#c084fc" />
+
+      <rect x="14" y="91" width="21.3" height="14.3" fill="#ffffff" />
+      <rect x="49" y="91" width="21.3" height="14.3" fill="#ffffff" />
+      <rect x="70" y="91" width="7.3" height="14.3" fill="#c084fc" />
+
+      <rect x="14" y="105" width="21.3" height="7.3" fill="#c084fc" />
+      <rect x="49" y="105" width="28.3" height="7.3" fill="#c084fc" />
+    </g>
 
     
-    <rect x="7" y="28" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="28" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="28" y="28" width="28.3" height="7.3" fill="#ffffff" />
-    <rect x="56" y="28" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="28" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="77" y="28" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="7" y="35" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="14" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
-    <rect x="21" y="35" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="28" y="35" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="42" y="35" width="7.3" height="7.3" fill="#f472b6" />
-    <rect x="49" y="35" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="56" y="35" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
-    <rect x="70" y="35" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="77" y="35" width="7.3" height="7.3" fill="#c084fc" />
-
-    
-    <rect x="14" y="42" width="21.3" height="7.3" fill="#ffffff" />
-    <rect x="35" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
-    <rect x="42" y="42" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="49" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
-    <rect x="56" y="42" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="42" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="21" y="49" width="49.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="49" width="7.3" height="7.3" fill="#c084fc" />
-    <rect x="91" y="49" width="14.3" height="7.3" fill="#c084fc" />
-
-    
-    <rect x="14" y="56" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="56" width="42.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="56" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="56" width="7.3" height="7.3" fill="#c084fc" />
-    <rect x="91" y="56" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="98" y="56" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="63" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="63" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="28" y="63" width="7.3" height="7.3" fill="#f9a8d4" />
-    <rect x="35" y="63" width="28.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="63" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="63" width="7.3" height="7.3" fill="#c084fc" />
-    <rect x="91" y="63" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="98" y="63" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="70" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="70" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="28" y="70" width="7.3" height="7.3" fill="#f9a8d4" />
-    <rect x="35" y="70" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="42" y="70" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="56" y="70" width="7.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="70" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="70" width="7.3" height="7.3" fill="#c084fc" />
-    <rect x="84" y="70" width="14.3" height="7.3" fill="#ffffff" />
-    <rect x="98" y="70" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="77" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="21" y="77" width="42.3" height="7.3" fill="#1e1633" />
-    <rect x="63" y="77" width="7.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="77" width="28.3" height="7.3" fill="#c084fc" />
-
-    
-    <rect x="14" y="84" width="56.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="84" width="14.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="91" width="21.3" height="7.3" fill="#ffffff" />
-    <rect x="49" y="91" width="21.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="91" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="98" width="21.3" height="7.3" fill="#ffffff" />
-    <rect x="49" y="98" width="21.3" height="7.3" fill="#ffffff" />
-    <rect x="70" y="98" width="7.3" height="7.3" fill="#c084fc" />
-
-    <rect x="14" y="105" width="21.3" height="7.3" fill="#c084fc" />
-    <rect x="49" y="105" width="28.3" height="7.3" fill="#c084fc" />
-
-    <text x="52" y="140" text-anchor="middle" class="byte">VERUSKA BYTE</text>
+    <text x="48" y="146" text-anchor="middle" class="byte">VERUSKA BYTE</text>
   </g>
 </svg>
