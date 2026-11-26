@@ -4,7 +4,7 @@
 
 # Veruska Rafaelly
 
-**Estudante de Ciência da Computação · Instrutora de Informática & Estagiária de TI**
+**Estudante de Ciência da Computação no 5° semestre · Instrutora de Informática & Estagiária de TI**
 
 Desenvolvo aplicações em Python, automações e dashboards interativos conectando lógica de programação, análise de dados e usabilidade.
 
