@@ -8,13 +8,13 @@
 
 Desenvolvo aplicações em Python, automações e dashboards interativos conectando lógica de programação, análise de dados e usabilidade.
 
-Trabalho com **Python (pandas, Flask), SQL, Power BI e Excel**. Meu foco é transformar dados brutos e ideias em ferramentas claras, organizadas e funcionais.
-
 <p>
-  <a href="#projetos-em-destaque"><img src="./assets/btn-projetos.svg" height="38" alt="Projetos" /></a>
-  <a href="#tecnologias"><img src="./assets/btn-tecnologias.svg" height="38" alt="Tecnologias" /></a>
-  <a href="#contato"><img src="./assets/btn-contato.svg" height="38" alt="Contato" /></a>
+  <a href="#projetos-em-destaque"><img src="./assets/btn-projetos.svg" height="36" alt="Projetos" /></a>
+  <a href="#tecnologias-e-ferramentas"><img src="./assets/btn-tecnologias.svg" height="36" alt="Tecnologias" /></a>
+  <a href="#contato"><img src="./assets/btn-contato.svg" height="36" alt="Contato" /></a>
 </p>
+
+<br/>
 
 ---
 
@@ -26,26 +26,26 @@ Trabalho com **Python (pandas, Flask), SQL, Power BI e Excel**. Meu foco é tran
   <img src="./assets/ard-projeto-1.svg" width="100%" alt="Fake Pinterest" />
 </a>
 
-Aplicação web desenvolvida com Python e Flask para compartilhamento de imagens, com sistema de contas, perfis de usuário e feed dinâmico.
+Aplicação web inspirada no Pinterest para compartilhamento de imagens, com sistema de contas, perfis de usuário e feed dinâmico.
 
 * **Recursos:** cadastro e login de usuários, upload de fotos e gerenciamento de perfil.
-* **Stack:** Python, Flask, HTML/CSS e banco de dados relacional.
+* **Repositório:** [veruskarafaelly/Projeto-FakePinterest](https://github.com/veruskarafaelly/Projeto-FakePinterest)
 
-### 02 / Gerenciador de Tarefas em Python
-
-Aplicação de linha de comando (CLI) modularizada (`main.py` e `operacoes.py`) focada em organização de código, lógica de programação e boas práticas em Python — disponível em [veruskarafaelly/Gerenciador-de-Tarefas](https://github.com/veruskarafaelly/Gerenciador-de-Tarefas).
+<br/>
 
 ---
 
 ## Tecnologias e ferramentas
 
-### Stack utilizada no Fake Pinterest
+### Desenvolvimento
 
 <p>
-  <img src="./assets/tech-fakepinterest.svg" width="100%" alt="Tecnologias do Fake Pinterest" />
+  <img src="./assets/tech-fakepinterest.svg" width="520" alt="Tecnologias do Fake Pinterest" />
 </p>
 
-Desenvolvi o back-end em **Python** com **Flask**, estruturando rotas, autenticação de usuários (login, cadastro e criptografia de senhas) e upload de imagens. Usei **SQLite** e **SQLAlchemy** para modelagem e persistência do banco de dados relacional, e **HTML5** com **CSS3** (e templates Jinja2) para construir as páginas de feed e perfil.
+No **Fake Pinterest**, desenvolvi o back-end em **Python** com **Flask**, estruturando rotas, autenticação de usuários e upload de imagens. Usei **SQLite** e **SQLAlchemy** para o banco de dados relacional e **HTML5** com **CSS3** para as páginas de feed e perfil.
+
+<br/>
 
 ---
 
