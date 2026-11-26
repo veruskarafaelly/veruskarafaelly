@@ -1,0 +1,33 @@
+<svg width="800" height="280" viewBox="0 0 800 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .title { font: 700 34px 'Segoe UI', system-ui, sans-serif; fill: #f9a8d4; }
+    .sub { font: 400 15px 'Segoe UI', system-ui, sans-serif; fill: #a1a1aa; }
+    .phrase { font: 400 18px 'Segoe UI', system-ui, sans-serif; fill: #f4f4f5; }
+    .mono { font: 500 13px 'Consolas', 'Courier New', monospace; fill: #c4b5fd; }
+    .cmd { font: 500 15px 'Consolas', 'Courier New', monospace; fill: #f9a8d4; }
+    .os { font: 600 12px 'Consolas', monospace; fill: #a1a1aa; letter-spacing: 2px; }
+    .cursor { animation: blink 1s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  
+  <rect x="2" y="2" width="796" height="276" rx="18" fill="#130f1a" stroke="#4c2a42" stroke-width="2" />
+  
+  
+  <circle cx="32" cy="28" r="5" fill="#f472b6" />
+  <circle cx="50" cy="28" r="5" fill="#c084fc" />
+  <circle cx="68" cy="28" r="5" fill="#60a5fa" />
+  <text x="768" y="32" text-anchor="end" class="os">VERUSKA OS</text>
+  <line x1="20" y1="48" x2="780" y2="48" stroke="#2d1b2e" stroke-width="1.5" />
+
+  
+  <text x="40" y="96" class="title">oi, eu sou a veruska! ♡</text>
+  <text x="40" y="124" class="sub">software · python · IA</text>
+  <text x="40" y="160" class="phrase">transformando dados e código em soluções reais.</text>
+
+  
+  <rect x="40" y="184" width="380" height="62" rx="10" fill="#1c1426" stroke="#4c2a42" stroke-width="1.5" />
+  <text x="56" y="208" class="mono">veruska@dev-os:~</text>
+  <text x="56" y="232" class="cmd">&gt; python main.py</text>
+  <rect x="210" y="218" width="9" height="17" fill="#f472b6" class="cursor" />
+</svg>
