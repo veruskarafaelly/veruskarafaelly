@@ -124,12 +124,12 @@
   <circle cx="32" cy="28" r="5" fill="#f472b6" />
   <circle cx="50" cy="28" r="5" fill="#c084fc" />
   <circle cx="68" cy="28" r="5" fill="#8ec5fc" />
-  <text x="768" y="32" text-anchor="end" class="os">VERUSKA OS</text>
+  <text x="768" y="32" text-anchor="end" class="os">CODEX OS</text>
   <line x1="20" y1="48" x2="780" y2="48" stroke="#2d1b2e" stroke-width="1.5" />
 
   
   <text x="40" y="96" class="title">oi, eu sou a veruska! ♡</text>
-  <text x="40" y="124" class="sub">dados · python · desenvolvimento</text>
+  <text x="40" y="124" class="sub">software · IA · dados</text>
   <text x="40" y="160" class="phrase">transformando dados e código em soluções reais.</text>
 
   
@@ -255,6 +255,6 @@
     </g>
 
     
-    <text x="48" y="146" text-anchor="middle" class="byte">VERUSKA BYTE</text>
+    <text x="48" y="146" text-anchor="middle" class="byte">CODEX BYTE</text>
   </g>
 </svg>
