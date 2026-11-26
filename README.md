@@ -8,7 +8,7 @@
 
 Crio aplicações web, ferramentas de análise e dashboards interativos que conectam software, IA e dados.
 
-Trabalho com Python, SQL, Flask, Power BI e Excel. Defino a estrutura, a direção visual e as prioridades dos projetos, usando IA como apoio à implementação e à revisão. Meu foco é transformar dados e ideias em soluções funcionais, com atenção à clareza, à usabilidade e aos detalhes.
+Trabalho com Python, SQL, HTML e CSS, JavaScript, Power BI e Excel. Defino a estrutura, a direção visual e as prioridades dos projetos, usando IA como apoio à implementação e à revisão. Meu foco é transformar dados e ideias em soluções funcionais, com atenção à clareza, à usabilidade e aos detalhes.
 
 <p>
   <a href="#projetos-em-destaque"><img src="./assets/btn-projetos.svg" height="36" alt="Projetos" /></a>
