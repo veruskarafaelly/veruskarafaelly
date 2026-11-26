@@ -1,11 +1,12 @@
 <svg width="800" height="280" viewBox="0 0 800 280" fill="none" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .title { font: 700 34px 'Segoe UI', system-ui, sans-serif; fill: #f9a8d4; }
+    .title { font: 700 32px 'Segoe UI', system-ui, sans-serif; fill: #f9a8d4; }
     .sub { font: 400 15px 'Segoe UI', system-ui, sans-serif; fill: #a1a1aa; }
     .phrase { font: 400 18px 'Segoe UI', system-ui, sans-serif; fill: #f4f4f5; }
     .mono { font: 500 13px 'Consolas', 'Courier New', monospace; fill: #c4b5fd; }
     .cmd { font: 500 15px 'Consolas', 'Courier New', monospace; fill: #f9a8d4; }
     .os { font: 600 12px 'Consolas', monospace; fill: #a1a1aa; letter-spacing: 2px; }
+    .byte { font: 600 11px 'Consolas', monospace; fill: #f472b6; letter-spacing: 1.5px; }
     .cursor { animation: blink 1s step-end infinite; }
     @keyframes blink { 50% { opacity: 0; } }
   </style>
@@ -22,7 +23,7 @@
 
   
   <text x="40" y="96" class="title">oi, eu sou a veruska! ♡</text>
-  <text x="40" y="124" class="sub">software · python · IA</text>
+  <text x="40" y="124" class="sub">dados · python · desenvolvimento</text>
   <text x="40" y="160" class="phrase">transformando dados e código em soluções reais.</text>
 
   
@@ -30,4 +31,133 @@
   <text x="56" y="208" class="mono">veruska@dev-os:~</text>
   <text x="56" y="232" class="cmd">&gt; python main.py</text>
   <rect x="210" y="218" width="9" height="17" fill="#f472b6" class="cursor" />
+
+  
+  <g transform="translate(558, 66)">
+    
+    <rect x="-18" y="49" width="4" height="4" fill="#f472b6" />
+    <rect x="-22" y="53" width="4" height="4" fill="#f472b6" />
+    <rect x="-14" y="53" width="4" height="4" fill="#f472b6" />
+    <rect x="-18" y="57" width="4" height="4" fill="#f472b6" />
+
+    <rect x="126" y="14" width="4" height="4" fill="#c084fc" />
+    <rect x="122" y="18" width="4" height="4" fill="#c084fc" />
+    <rect x="130" y="18" width="4" height="4" fill="#c084fc" />
+    <rect x="126" y="22" width="4" height="4" fill="#c084fc" />
+    <rect x="120" y="88" width="4" height="4" fill="#f472b6" />
+
+    
+    <rect x="14" y="0" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="63" y="0" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="77" y="0" width="7.3" height="7.3" fill="#f472b6" />
+
+    
+    <rect x="14" y="7" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="7" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="28" y="7" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="56" y="7" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="63" y="7" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="70" y="7" width="7.3" height="7.3" fill="#db2777" />
+    <rect x="77" y="7" width="7.3" height="7.3" fill="#f472b6" />
+
+    
+    <rect x="14" y="14" width="49.3" height="7.3" fill="#ffffff" />
+    <rect x="63" y="14" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="70" y="14" width="7.3" height="7.3" fill="#c084fc" />
+    <rect x="77" y="14" width="7.3" height="7.3" fill="#f472b6" />
+
+    
+    <rect x="7" y="21" width="70.3" height="7.3" fill="#ffffff" />
+    <rect x="77" y="21" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="7" y="28" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="28" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="28" y="28" width="28.3" height="7.3" fill="#ffffff" />
+    <rect x="56" y="28" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="28" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="77" y="28" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="7" y="35" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="14" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
+    <rect x="21" y="35" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="28" y="35" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="42" y="35" width="7.3" height="7.3" fill="#f472b6" />
+    <rect x="49" y="35" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="56" y="35" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
+    <rect x="70" y="35" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="77" y="35" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="42" width="21.3" height="7.3" fill="#ffffff" />
+    <rect x="35" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
+    <rect x="42" y="42" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="49" y="42" width="7.3" height="7.3" fill="#e9d5ff" />
+    <rect x="56" y="42" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="42" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="21" y="49" width="49.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="49" width="7.3" height="7.3" fill="#c084fc" />
+    <rect x="91" y="49" width="14.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="56" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="56" width="42.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="56" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="56" width="7.3" height="7.3" fill="#c084fc" />
+    <rect x="91" y="56" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="98" y="56" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="63" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="63" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="28" y="63" width="7.3" height="7.3" fill="#f9a8d4" />
+    <rect x="35" y="63" width="28.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="63" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="63" width="7.3" height="7.3" fill="#c084fc" />
+    <rect x="91" y="63" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="98" y="63" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="70" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="70" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="28" y="70" width="7.3" height="7.3" fill="#f9a8d4" />
+    <rect x="35" y="70" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="42" y="70" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="56" y="70" width="7.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="70" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="70" width="7.3" height="7.3" fill="#c084fc" />
+    <rect x="84" y="70" width="14.3" height="7.3" fill="#ffffff" />
+    <rect x="98" y="70" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="77" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="21" y="77" width="42.3" height="7.3" fill="#1e1633" />
+    <rect x="63" y="77" width="7.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="77" width="28.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="84" width="56.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="84" width="14.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="91" width="21.3" height="7.3" fill="#ffffff" />
+    <rect x="49" y="91" width="21.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="91" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="98" width="21.3" height="7.3" fill="#ffffff" />
+    <rect x="49" y="98" width="21.3" height="7.3" fill="#ffffff" />
+    <rect x="70" y="98" width="7.3" height="7.3" fill="#c084fc" />
+
+    
+    <rect x="14" y="105" width="21.3" height="7.3" fill="#c084fc" />
+    <rect x="49" y="105" width="28.3" height="7.3" fill="#c084fc" />
+
+    
+    <text x="52" y="140" text-anchor="middle" class="byte">VERUSKA BYTE</text>
+  </g>
 </svg>
