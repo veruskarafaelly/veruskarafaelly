@@ -138,7 +138,7 @@
   <text x="56" y="232" class="arrow">&gt;</text>
 
   
-  <text x="72" y="232" class="cmd c1">curiosidade.exe</text>
+  <text x="72" y="232" textLength="135" class="cmd">curiosidade.exe</text>
   
   
   <g class="typer">
