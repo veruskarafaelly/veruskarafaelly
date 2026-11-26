@@ -1,0 +1,7 @@
+<svg width="800" height="110" viewBox="0 0 800 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect x="1" y="1" width="798" height="108" rx="12" fill="#181220" stroke="#4c2a42" stroke-width="1.5" />
+  <rect x="20" y="22" width="4" height="66" rx="2" fill="#f472b6" />
+  <text x="38" y="40" font-family="Consolas, monospace" font-size="11" fill="#f472b6" letter-spacing="1.5">PYTHON · FLASK · WEB</text>
+  <text x="38" y="68" font-family="Segoe UI, sans-serif" font-size="22" font-weight="700" fill="#f4f4f5">Fake Pinterest</text>
+  <text x="38" y="90" font-family="Segoe UI, sans-serif" font-size="13" fill="#a1a1aa">Aplicação web inspirada no Pinterest com autenticação e upload de imagens.</text>
+</svg>
