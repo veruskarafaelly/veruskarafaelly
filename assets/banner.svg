@@ -1,4 +1,23 @@
 <svg width="800" height="280" viewBox="0 0 800 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M 24 0 L 0 0 0 24" fill="none" stroke="#36203a" stroke-width="0.9" opacity="0.65" />
+    </pattern>
+
+    
+    <radialGradient id="glow" cx="76%" cy="56%" r="36%">
+      <stop offset="0%" stop-color="#f472b6" stop-opacity="0.16" />
+      <stop offset="55%" stop-color="#c084fc" stop-opacity="0.06" />
+      <stop offset="100%" stop-color="#130f1a" stop-opacity="0" />
+    </radialGradient>
+
+    
+    <clipPath id="card-clip">
+      <rect x="2" y="2" width="796" height="276" rx="18" />
+    </clipPath>
+  </defs>
+
   <style>
     .title { font: 700 32px 'Segoe UI', system-ui, sans-serif; fill: #f9a8d4; }
     .sub { font: 400 15px 'Segoe UI', system-ui, sans-serif; fill: #a1a1aa; }
@@ -7,13 +26,64 @@
     .cmd { font: 500 15px 'Consolas', 'Courier New', monospace; fill: #f9a8d4; }
     .os { font: 600 12px 'Consolas', monospace; fill: #a1a1aa; letter-spacing: 2px; }
     .byte { font: 600 11px 'Consolas', monospace; fill: #f472b6; letter-spacing: 1.5px; }
-    .cursor { animation: blink 1s step-end infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
+
+    /* Animação de digitação do terminal */
+    .typer { animation: typing 4s infinite; }
+    .cursor { animation: blink 0.85s step-end infinite; }
+
+    /* Alternância automática dos 3 comandos */
+    .c1 { animation: show1 12s step-end infinite; }
+    .c2 { animation: show2 12s step-end infinite; }
+    .c3 { animation: show3 12s step-end infinite; }
+
+    /* Brilhos piscando suavemente */
+    .sparkle { animation: twinkle 2.4s ease-in-out infinite; }
+    .sparkle-delay { animation: twinkle 2.4s ease-in-out 1.2s infinite; }
+
+    @keyframes typing {
+      0% { transform: translateX(0px); animation-timing-function: step-end; }
+      8% { transform: translateX(0px); animation-timing-function: steps(15, end); }
+      44% { transform: translateX(140px); animation-timing-function: step-end; }
+      78% { transform: translateX(140px); animation-timing-function: steps(15, end); }
+      94%, 100% { transform: translateX(0px); }
+    }
+
+    @keyframes blink {
+      50% { opacity: 0; }
+    }
+
+    @keyframes show1 {
+      0% { opacity: 1; }
+      33.33% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes show2 {
+      0% { opacity: 0; }
+      33.33% { opacity: 1; }
+      66.66% { opacity: 0; }
+    }
+
+    @keyframes show3 {
+      0% { opacity: 0; }
+      66.66% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    @keyframes twinkle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
   </style>
 
   
-  <rect x="2" y="2" width="796" height="276" rx="18" fill="#130f1a" stroke="#4c2a42" stroke-width="2" />
-  
+  <g clip-path="url(#card-clip)">
+    <rect x="2" y="2" width="796" height="276" fill="#130f1a" />
+    <rect x="2" y="2" width="796" height="276" fill="url(#grid)" />
+    <rect x="2" y="2" width="796" height="276" fill="url(#glow)" />
+  </g>
+  <rect x="2" y="2" width="796" height="276" rx="18" fill="none" stroke="#4c2a42" stroke-width="2" />
+
   
   <circle cx="32" cy="28" r="5" fill="#f472b6" />
   <circle cx="50" cy="28" r="5" fill="#c084fc" />
@@ -29,29 +99,42 @@
   
   <rect x="40" y="184" width="380" height="62" rx="10" fill="#1c1426" stroke="#4c2a42" stroke-width="1.5" />
   <text x="56" y="208" class="mono">veruska@dev-os:~</text>
-  <text x="56" y="232" class="cmd">&gt; python main.py</text>
-  <rect x="210" y="218" width="9" height="17" fill="#f472b6" class="cursor" />
+  <text x="56" y="232" class="cmd">&gt;</text>
+
+  
+  <text x="72" y="232" class="cmd c1">curiosidade.exe</text>
+  <text x="72" y="232" class="cmd c2">python_dados.py</text>
+  <text x="72" y="232" class="cmd c3">flask_server.py</text>
+
+  
+  <g class="typer">
+    <rect x="71" y="214" width="148" height="26" fill="#1c1426" />
+    <rect x="72" y="218" width="9" height="17" fill="#f472b6" class="cursor" />
+  </g>
 
   
   <g transform="translate(558, 66)">
     
-    <rect x="-18" y="49" width="4" height="4" fill="#f472b6" />
-    <rect x="-22" y="53" width="4" height="4" fill="#f472b6" />
-    <rect x="-14" y="53" width="4" height="4" fill="#f472b6" />
-    <rect x="-18" y="57" width="4" height="4" fill="#f472b6" />
+    <g class="sparkle">
+      <rect x="-18" y="49" width="4" height="4" fill="#f472b6" />
+      <rect x="-22" y="53" width="4" height="4" fill="#f472b6" />
+      <rect x="-14" y="53" width="4" height="4" fill="#f472b6" />
+      <rect x="-18" y="57" width="4" height="4" fill="#f472b6" />
+    </g>
 
-    <rect x="126" y="14" width="4" height="4" fill="#c084fc" />
-    <rect x="122" y="18" width="4" height="4" fill="#c084fc" />
-    <rect x="130" y="18" width="4" height="4" fill="#c084fc" />
-    <rect x="126" y="22" width="4" height="4" fill="#c084fc" />
-    <rect x="120" y="88" width="4" height="4" fill="#f472b6" />
+    <g class="sparkle-delay">
+      <rect x="126" y="14" width="4" height="4" fill="#c084fc" />
+      <rect x="122" y="18" width="4" height="4" fill="#c084fc" />
+      <rect x="130" y="18" width="4" height="4" fill="#c084fc" />
+      <rect x="126" y="22" width="4" height="4" fill="#c084fc" />
+      <rect x="120" y="88" width="4" height="4" fill="#f472b6" />
+    </g>
 
     
     <rect x="14" y="0" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="63" y="0" width="7.3" height="7.3" fill="#f472b6" />
     <rect x="77" y="0" width="7.3" height="7.3" fill="#f472b6" />
 
-    
     <rect x="14" y="7" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="21" y="7" width="7.3" height="7.3" fill="#f472b6" />
     <rect x="28" y="7" width="7.3" height="7.3" fill="#ffffff" />
@@ -66,7 +149,6 @@
     <rect x="70" y="14" width="7.3" height="7.3" fill="#c084fc" />
     <rect x="77" y="14" width="7.3" height="7.3" fill="#f472b6" />
 
-    
     <rect x="7" y="21" width="70.3" height="7.3" fill="#ffffff" />
     <rect x="77" y="21" width="7.3" height="7.3" fill="#c084fc" />
 
@@ -78,7 +160,6 @@
     <rect x="63" y="28" width="14.3" height="7.3" fill="#ffffff" />
     <rect x="77" y="28" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="7" y="35" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="14" y="35" width="7.3" height="7.3" fill="#f9a8d4" />
     <rect x="21" y="35" width="7.3" height="7.3" fill="#1e1633" />
@@ -98,7 +179,6 @@
     <rect x="56" y="42" width="14.3" height="7.3" fill="#ffffff" />
     <rect x="70" y="42" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="21" y="49" width="49.3" height="7.3" fill="#ffffff" />
     <rect x="70" y="49" width="7.3" height="7.3" fill="#c084fc" />
     <rect x="91" y="49" width="14.3" height="7.3" fill="#c084fc" />
@@ -111,7 +191,6 @@
     <rect x="91" y="56" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="98" y="56" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="63" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="21" y="63" width="7.3" height="7.3" fill="#1e1633" />
     <rect x="28" y="63" width="7.3" height="7.3" fill="#f9a8d4" />
@@ -121,7 +200,6 @@
     <rect x="91" y="63" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="98" y="63" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="70" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="21" y="70" width="7.3" height="7.3" fill="#1e1633" />
     <rect x="28" y="70" width="7.3" height="7.3" fill="#f9a8d4" />
@@ -133,7 +211,6 @@
     <rect x="84" y="70" width="14.3" height="7.3" fill="#ffffff" />
     <rect x="98" y="70" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="77" width="7.3" height="7.3" fill="#ffffff" />
     <rect x="21" y="77" width="42.3" height="7.3" fill="#1e1633" />
     <rect x="63" y="77" width="7.3" height="7.3" fill="#ffffff" />
@@ -143,21 +220,17 @@
     <rect x="14" y="84" width="56.3" height="7.3" fill="#ffffff" />
     <rect x="70" y="84" width="14.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="91" width="21.3" height="7.3" fill="#ffffff" />
     <rect x="49" y="91" width="21.3" height="7.3" fill="#ffffff" />
     <rect x="70" y="91" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="98" width="21.3" height="7.3" fill="#ffffff" />
     <rect x="49" y="98" width="21.3" height="7.3" fill="#ffffff" />
     <rect x="70" y="98" width="7.3" height="7.3" fill="#c084fc" />
 
-    
     <rect x="14" y="105" width="21.3" height="7.3" fill="#c084fc" />
     <rect x="49" y="105" width="28.3" height="7.3" fill="#c084fc" />
 
-    
     <text x="52" y="140" text-anchor="middle" class="byte">VERUSKA BYTE</text>
   </g>
 </svg>
