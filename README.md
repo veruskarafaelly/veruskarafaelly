@@ -4,8 +4,6 @@
 
 # Veruska Rafaelly
 
-# Veruska Rafaelly
-
 **Estudante de Ciência da Computação na Estácio (5º semestre) · Instrutora de Informática & Estagiária de TI**
 
 Crio aplicações web, ferramentas de análise e dashboards interativos que conectam software, IA e dados.
