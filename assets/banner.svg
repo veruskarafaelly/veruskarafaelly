@@ -139,9 +139,7 @@
 
   
   <text x="72" y="232" class="cmd c1">curiosidade.exe</text>
-  <text x="72" y="232" class="cmd c2">python_dados.py</text>
-  <text x="72" y="232" class="cmd c3">flask_server.py</text>
-
+  
   
   <g class="typer">
     <rect x="71" y="214" width="148" height="26" fill="#1c1426" />
