@@ -4,9 +4,13 @@
 
 # Veruska Rafaelly
 
-**Estudante de Ciência da Computação no 5° semestre · Instrutora de Informática & Estagiária de TI**
+# Veruska Rafaelly
 
-Desenvolvo aplicações em Python, automações e dashboards interativos conectando lógica de programação, análise de dados e usabilidade.
+**Estudante de Ciência da Computação na Estácio (5º semestre) · Instrutora de Informática & Estagiária de TI**
+
+Crio aplicações web, ferramentas de análise e dashboards interativos que conectam software, IA e dados.
+
+Trabalho com Python, SQL, Flask, Power BI e Excel. Defino a estrutura, a direção visual e as prioridades dos projetos, usando IA como apoio à implementação e à revisão. Meu foco é transformar dados e ideias em soluções funcionais, com atenção à clareza, à usabilidade e aos detalhes.
 
 <p>
   <a href="#projetos-em-destaque"><img src="./assets/btn-projetos.svg" height="36" alt="Projetos" /></a>
